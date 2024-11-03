@@ -1,44 +1,54 @@
-# Nivell 1 Tasca 5 _ UTILS
+# Nivell 1 Tasca 5 - UTILS
 
-## Compilar y ejecutar programa desde terminal
+## Compilar y ejecutar el programa desde la terminal
 
-Seguimos siguientes pasos:
+Para compilar y ejecutar el programa, sigue estos pasos:
 
-**Paso 1:**
+### PASO 1: Ir a la carpeta raíz del proyecto
 
-Movemos hasta la carpeta raíz con siguiente comando
+Accede a la carpeta raíz del proyecto utilizando el siguiente comando:
 
-cd tu/ruta/hasta/la/carpeta/raiz
+```
+cd /ruta/hasta/la/carpeta/raiz
+```
 
-Ejemplo:
+**Ejemplo:**
 
+```
+cd /Users/test/IdeaProjects/S1_Tasca5_Utils
+```
 
-``cd /Users/test/IdeaProjects/S1_Tasca5_Utils``
+### PASO 2: Compilar el proyecto
 
-**PASO 2**
+Compila el proyecto con el siguiente comando:
 
-Compilamos el proyecto con siguiente comando:
+```
+javac -d out ruta/que/contiene/archivos/java/*.java
+```
 
-javac -d out carpeta/que/contiene/archivos/java/conTodosLosArchivosJava
+**Ejemplo:**
 
-Ejemplo:
+```
+javac -d out src/main/java/org/example/nivell1/exercici1/*.java
+```
 
-``javac -d out src/main/java/org/example/nivell1/exercici1/*.java``
+- El comando `javac` compila los archivos Java.
+- La opción `-d out` crea la carpeta `out`, donde se almacenarán los archivos compilados (.class) listos para su ejecución.
 
-el comando javac compila el programa. 
-el comando -d crea una carpeta con nombre out donde se guardarán los archivos java compilados para su ejecucion
+### PASO 3: Ejecutar el programa
 
-**PASO 3**
+Ejecuta el programa con el siguiente comando:
 
-Ejecutar el programa con el siguienete comando:
+```
+java -cp ruta/de/carpetaConArchivosCompilados NombreClasePrincipal
+```
 
-java -cp carpetaConLosArchivosCompilados/Main
+**Ejemplo:**
 
-Ejemplo:
+```
+java -cp out org.example.nivell1.exercici1.Main
+```
 
-``java -cp out org.example.nivell1.exercici1.Main``
-
-el comando java ejecuta
-el comando -cp nombreDeCarpeta indica la ruta desde donde se debe ejecutar el programa.
-
- 
+- El comando `java` ejecuta el programa.
+- La opción `-cp out` indica la ruta de la carpeta (`out`) que contiene los archivos compilados.
+- Asegúrate de especificar el nombre completo de la clase principal con su paquete (en este caso, `org.example.nivell1.exercici1.Main`).
