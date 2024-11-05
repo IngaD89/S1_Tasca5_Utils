@@ -9,29 +9,28 @@ import java.util.Date;
 
 public class SaveFilesInTXT {
 
-    public void printFilesAsTreeAndSaveInTXT(File directory, int grade, PrintWriter writer) {
-        try {
-            if (directory.isDirectory()) {
-                writer.println(tabulation(grade) + "D--- " + directory.getName()
-                        + " ____last modification___: "
-                        + updatedAt(directory));
-                File[] files = directory.listFiles();
-                if (files != null) {
-                    Arrays.sort(files);
-                    for (File file : files) {
-                        if (file.isDirectory()) {
-                            printFilesAsTreeAndSaveInTXT(file, grade + 1, writer);
-                        } else {
-                            writer.println(
-                                    tabulation(grade + 1) + "F--- " + file.getName()
-                                            + " ___last modification of file___ "
-                                            + updatedAt(file));
-                        }
+    public void printFilesAsTreeAndSaveInTXT(File directory, int grade, PrintWriter writer) throws FileNotFoundException {
+        if (!directory.exists()) {
+            throw new FileNotFoundException();
+        }
+        if (directory.isDirectory()) {
+            writer.println(tabulation(grade) + "D--- " + directory.getName()
+                    + " ____last modification___: "
+                    + updatedAt(directory));
+            File[] files = directory.listFiles();
+            if (files != null) {
+                Arrays.sort(files);
+                for (File file : files) {
+                    if (file.isDirectory()) {
+                        printFilesAsTreeAndSaveInTXT(file, grade + 1, writer);
+                    } else {
+                        writer.println(
+                                tabulation(grade + 1) + "F--- " + file.getName()
+                                        + " ___last modification of file___ "
+                                        + updatedAt(file));
                     }
                 }
             }
-        } catch (Exception e) {
-            System.out.println("Error while print files as tree " + e.getMessage());
         }
     }
 

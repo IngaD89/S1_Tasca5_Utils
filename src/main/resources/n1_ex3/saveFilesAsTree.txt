@@ -1,6 +1,7 @@
-D--- resources ____last modification___: 2024-10-30 13:39:42
+D--- resources ____last modification___: 2024-11-04 12:51:33
 |  D--- empty_directory ____last modification___: 2024-10-28 13:36:18
-|  D--- n1_ex1 ____last modification___: 2024-10-29 14:10:26
+|  D--- n1_ex1 ____last modification___: 2024-11-05 11:40:24
+|  |  F--- Santiago ___last modification of file___ 2024-11-05 11:40:24
 |  |  F--- a_file ___last modification of file___ 2024-10-28 13:32:51
 |  |  F--- file_1 ___last modification of file___ 2024-10-28 12:43:06
 |  |  F--- file_2.json ___last modification of file___ 2024-10-28 12:43:24
@@ -10,5 +11,11 @@ D--- resources ____last modification___: 2024-10-30 13:39:42
 |  |  |  F--- b_file ___last modification of file___ 2024-10-30 11:22:01
 |  |  F--- c_file ___last modification of file___ 2024-10-30 11:21:43
 |  |  F--- d_file ___last modification of file___ 2024-10-30 11:22:15
-|  D--- n1_ex3 ____last modification___: 2024-11-03 08:09:11
-|  |  F--- saveFilesAsTree.txt ___last modification of file___ 2024-11-03 08:20:44
+|  D--- n1_ex3 ____last modification___: 2024-11-05 13:34:40
+|  |  F--- saveFilesAsTree.txt ___last modification of file___ 2024-11-05 13:34:43
+|  D--- n1_ex4 ____last modification___: 2024-11-05 13:02:07
+|  |  F--- anotherTXTFile.txt ___last modification of file___ 2024-11-03 08:39:08
+|  |  F--- readTxtFile.txt ___last modification of file___ 2024-11-05 13:02:07
+|  D--- n2_ex1 ____last modification___: 2024-11-04 13:11:40
+|  |  F--- config.properties ___last modification of file___ 2024-11-04 13:11:40
+|  |  F--- outputFile.txt ___last modification of file___ 2024-11-04 13:01:30

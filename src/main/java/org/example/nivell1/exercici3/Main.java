@@ -3,12 +3,15 @@ package org.example.nivell1.exercici3;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class Main {
     public static void main(String[] args) {
-        File directoryToRead = new File("src/main/resources");
+        Path basePath = Paths.get(System.getProperty("user.dir"));
 
-        File outputFile = new File("src/main/resources/n1_ex3/saveFilesAsTree.txt");
+        File directoryToRead = basePath.resolve("src/main/resources").toFile();
+        File outputFile = basePath.resolve("src/main/resources/n1_ex3/saveFilesAsTree.txt").toFile();
 
         SaveFilesInTXT saveFilesInTXT = new SaveFilesInTXT();
         try (PrintWriter writer = new PrintWriter(outputFile)) {
